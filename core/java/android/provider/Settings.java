@@ -986,6 +986,7 @@ public final class Settings {
             MOVED_TO_SECURE.add(Secure.LOCK_DOTS_VISIBLE);
             MOVED_TO_SECURE.add(Secure.LOCK_PATTERN_TACTILE_FEEDBACK_ENABLED);
             MOVED_TO_SECURE.add(Secure.LOCK_NUMPAD_RANDOM);
+            MOVED_TO_SECURE.add(Secure.SIMPIN_RANDOM);
             MOVED_TO_SECURE.add(Secure.LOCKSCREEN_UNSECURE_USED);
             MOVED_TO_SECURE.add(Secure.LOGGING_ID);
             MOVED_TO_SECURE.add(Secure.PARENTAL_CONTROL_ENABLED);
@@ -6222,6 +6223,14 @@ public final class Settings {
          * @hide
          */
         public static final String LOCK_NUMPAD_RANDOM = "lock_numpad_random";
+
+        /**
+         * Whether the NumKeyPad will change the orders of numbers
+         * in SIM/PIN/PUK locked lockscreen
+         * 0 = off | 1 = always | 2 = only on request
+         * @hide
+         */
+        public static final String SIMPIN_RANDOM = "simpin_random";
 
          /*
          * Stores value for lock before unlock
